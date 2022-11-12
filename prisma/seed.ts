@@ -1,13 +1,19 @@
 import db from "../src/config/database";
-import { statusInterface } from "../src/interfaces/index";
+import { statusDosLivrosInterface , statusDosEmprestimosInterface } from "../src/interfaces/index";
 
 async function main(){
-    const listaStatus : Omit <statusInterface , "id">[] = [
+    const listaStatusLivros : Omit <statusDosLivrosInterface , "id">[] = [
         {status: "Disponível"},
         {status: "Emprestado"},
     ];
 
-    await db.status.createMany({ data: listaStatus });
+    const listaStatusEmprestimos : Omit <statusDosEmprestimosInterface , "id">[] = [
+        {status: "Ativo"},
+        {status: "Finalizado"},
+    ];
+
+    await db.statusDosLivros.createMany({ data: listaStatusLivros });
+    await db.statusDosEmprestimos.createMany({ data: listaStatusEmprestimos });
 }
 
 main();
