@@ -12,25 +12,24 @@ model estante {
   nomeDoLivro   String
   autor   String
   Edicao String
+  statusLivro   Int
 
-  statusDosLivros   statusDosLivros[]
+  status  statusDosLivros @relation(fields: [statusLivro] , references: [id])
   emprestimos   emprestimos[]
 }
 
-model status {
+model statusDosLivros {
   id         Int      @id @default(autoincrement())
   status    String    @unique
 
-  statusDosLivros   statusDosLivros[]  
+  estante   estante[]  
 }
 
-model statusDosLivros {
-  id      Int      @id @default(autoincrement())
-  livroId   Int
-  statusId  Int
+model statusDosEmprestimos {
+  id         Int      @id @default(autoincrement())
+  status    String    @unique
 
-  livro estante @relation(fields: [livroId] , references: [id])
-  statusLivro  status @relation(fields: [statusId] , references: [id])
+  emprestimos emprestimos[]
 }
 
 model emprestimos {
@@ -38,6 +37,9 @@ model emprestimos {
   livroId   Int
   quemPegou String
   criadoEm DateTime @default(now())
+  statusEmprestimo    Int
 
   livro estante @relation(fields: [livroId] , references: [id])
+  status  statusDosEmprestimos @relation(fields: [statusEmprestimo] , references: [id])
+
 }
