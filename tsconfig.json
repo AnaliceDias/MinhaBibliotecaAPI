@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        // "baseUrl": ".",
+        // "paths": {
+        //     "@dotenv/*": ["node_modules/dotenv/lib/main"]
+        // }
+        
+    },
+    "ts-none": {
+        "esm": true
+    }
+}

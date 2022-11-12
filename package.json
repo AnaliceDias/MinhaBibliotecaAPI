@@ -1,0 +1,47 @@
+{
+  "name": "minhabiblioteca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.ts",
+    "dev": "npx nodemon index.ts"
+  },
+  "prisma": {
+    "seed": "ts-node ./prisma/seed.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaliceDias/minhaBibliotecaAPI.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Analice Dias",
+    "gitHub": "https://github.com/AnaliceDias"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnaliceDias/minhaBibliotecaAPI/issues"
+  },
+  "homepage": "https://github.com/AnaliceDias/minhaBibliotecaAPI#readme",
+  "dependencies": {
+    "@prisma/client": "^4.6.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.7.0",
+    "prisma": "^4.6.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/dotenv": "^8.2.0",
+    "@types/eslint": "^8.4.10",
+    "@types/express": "^4.17.14",
+    "@types/joi": "^17.2.3",
+    "eslint": "^8.27.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
