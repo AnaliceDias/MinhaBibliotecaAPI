@@ -1,5 +1,5 @@
 import db from "../src/config/database";
-import { statusDosLivrosInterface , statusDosEmprestimosInterface } from "../src/interfaces/index";
+import { statusDosLivrosInterface , statusDosEmprestimosInterface } from "../src/interfaces/interfaces";
 
 async function main(){
     const listaStatusLivros : Omit <statusDosLivrosInterface , "id">[] = [
