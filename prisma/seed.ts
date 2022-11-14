@@ -3,13 +3,13 @@ import { statusDosLivrosInterface , statusDosEmprestimosInterface } from "../src
 
 async function main(){
     const listaStatusLivros : Omit <statusDosLivrosInterface , "id">[] = [
-        {status: "Disponível"},
-        {status: "Emprestado"},
+        {status: "disponível"},
+        {status: "emprestado"},
     ];
 
     const listaStatusEmprestimos : Omit <statusDosEmprestimosInterface , "id">[] = [
-        {status: "Ativo"},
-        {status: "Finalizado"},
+        {status: "ativo"},
+        {status: "finalizado"},
     ];
 
     await db.statusDosLivros.createMany({ data: listaStatusLivros });
