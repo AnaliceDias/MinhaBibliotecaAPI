@@ -2,7 +2,7 @@
 
 ### Como usar
 
-1. Antes de usar a API crie um arquivo <.env> baseando-se no modelo presente no arquivo <.env.example>
+1. Antes de usar a API crie um arquivo `.env` baseando-se no modelo presente no arquivo `.env.example`
 
 2. Execute o comando `npm run build` e se certifique de que o banco de dados "minhaBiblioteca foi criado"
 
