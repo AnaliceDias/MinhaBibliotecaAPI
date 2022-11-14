@@ -8,6 +8,7 @@
 <br></br>
 3. Para subir o servidor execute o comando `npm start` 
 <br></br>
+
 ### Consumindo a API <p></p>
 
 Essa API dispôes das seguintes rotas:<p></p>
