@@ -11,7 +11,7 @@ model estante {
   id         Int      @id @default(autoincrement())
   nomeDoLivro   String
   autor   String
-  Edicao String
+  edicao String
   statusLivro   Int
 
   status  statusDosLivros @relation(fields: [statusLivro] , references: [id])
