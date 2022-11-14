@@ -8,21 +8,18 @@
 <br></br>
 3. Para subir o servidor execute o comando `npm start` 
 <br></br>
-### Consumindo a API
-<br></br>
+### Consumindo a API <p></p>
 
-Essa API dispôes das seguintes rotas:<br></br>
+Essa API dispôes das seguintes rotas:<p></p>
 
 ### `(.post) "/estante/cadastrar"`
 Para cadastrar um novo livro na estante, envie uma requisição com o corpo no formato
 
-{<br></br>
+{<p></p>
     nomeDoLivro: "O sol é para todos",<p></p>
     autor: "Harper Lee",<p></p>
-    edicao: "49ª edição"<br></br>
-}
-<br></br>
-
+    edicao: "49ª edição"<p></p>
+}<br></br>
 ### `(.post) "/estante/remover/:idLivro)"` 
 Passe o id de um livro como parâmetro nesta rota para removê-lo de sua estante.<br></br>
 
