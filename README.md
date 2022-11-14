@@ -28,7 +28,9 @@ Passe o id de um livro como parâmetro nestra rota para registar um empréstimo.
 
 O corpo da requisição deve conter um objeto no formato
 
-{quemPegou: "Fulano"}<br></br>
+{<p></p>
+quemPegou: "Fulano"<p></p>
+}<br></br>
 
 ### `(.put) "/estante/devolver/:idEmprestimo"`
 Passe o id de um empréstimo como parâmetro nesta rota para registrar a devolução do livro.<br></br>
